@@ -62,6 +62,10 @@ a:hover {
   color: #818eaa;
 }
 
+.description {
+  margin-bottom: 40px;
+}
+
 
 #email {
   background-color: #465881;
