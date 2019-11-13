@@ -5,24 +5,24 @@ body {
   font-weight 400;
 }
 
-img{
+img {
   width: 150px;
   height: 150px;
   border-radius:50%;
 }
 
-#container{
+#container {
     max-width: 800px;
     margin: 0px auto;
     padding: 0 20px;
 }
 
-p{
+p {
   padding-left: 80px;
   padding-right: 80px;
 }
 
-.heading-icon{
+.heading-icon {
   font-size: 30px;
   color: #465881;
   margin-bottom: -10px;
@@ -37,7 +37,7 @@ p{
   text-align: center;
 }
 
-a:hover{
+a:hover {
   color: #818eaa;
 }
 
@@ -63,7 +63,7 @@ a:hover{
 }
 
 
-#email{
+#email {
   background-color: #465881;
   color: white;
   padding: 15px 20px;
@@ -71,23 +71,23 @@ a:hover{
   text-decoration: none;
 }
 
-#email:hover{
+#email:hover {
   background-color: #818eaa;
 }
 
-.fa-envelope{
-  padding-right:20px;
+.fa-envelope {
+  padding-right: 20px;
 }
 
 @media (max-width: 700px) {
   /* For a screen < 960px, this CSS will be read */
   .card-white {
   box-shadow: 0px 10px 10px rgba(50,115,255,0.3);
-  margin-bottom:40px;
+  margin-bottom: 40px;
   }
 
-  .fa-envelope{
-    padding-right:30px;
+  .fa-envelope {
+    padding-right: 30px;
   }
 
 }
