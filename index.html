@@ -5,39 +5,108 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
   </head>
   <body>
     <div id="container">
       <div class="card-white">
-        <h1>Hello, I'm Daniel</h1>
-        <img src="images/DL.jpg"></img>
-        <p class="description">By day, Product Manager based in London. By night, full stack developer at Le Wagon, Barcleona.</p>
+        <h1 class="typewriter">Hello, I'm Daniel</h1>
+        <img src="images/DL.jpg" class="profilepic"></img>
+        <p class="description">I'm a Product Manager and Developer working on a number of digital projects. I recently completed Le Wagon's Full Stack Web Development bootcamp in Barcleona.</p>
       </div>
 
       <div class="card-white">
         <i class="fas fa-pencil-alt heading-icon"></i>
         <h2>Projects</h2>
-        <p>Projects in Javascript, VB.Net and HTML/CSS.</p>
-        <p>Learning Ruby on Rails and taking online courses in Machine Learning.</p>
-        <p>Try my <a href="https://danieluk00.github.io/connect4/" target="_blank">Connect 4</a> game.
+        <p >Some examples of projects I've built (for work and for fun).</p>
+
+        <div class="projects">
+
+          <div class="project-card">
+            <img src="images/epicenter.png" />
+            <div class="project-info">
+                <div>
+                  <h2>Epicenter</h2>
+                  <p>Experimental project where a meeting place is algorithmically chosen for an event based on where the attendees are travelling from.</p>
+                  <br>
+                  <p class="tools"><i class="fas fa-pencil-alt"></i> Ruby on Rails, JS, Google Places API</p>
+                </div>
+                <a href="http://www.epicenter.live/" target="_blank" class="view-btn">View project</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/connect4.png" />
+              <div class="project-info">
+                <div>
+                  <h2>Connect 4</h2>
+                  <p>My version of Connect 4 - play against a computer opponent, or two player via the web.</p>
+                  <br>
+                  <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, HTML, CSS, Bootstrap</p>
+                </div>
+                <a href="https://danieluk00.github.io/connect4/" target="_blank" class="view-btn">View project</a>
+              </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/news.png" />
+            <div class="project-info">
+                <div>
+                  <h2>Scrapbook</h2>
+                  <p>A service to save, tag and find articles that you may want to read again.</p>
+                  <br>
+                  <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, Firebase</p>
+                </div>
+                <a href="https://danieluk00.github.io/scrapbook/" target="_blank" class="view-btn">View project</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="images/todo.png" />
+            <div class="project-info">
+              <div>
+                <h2>To-do list</h2>
+                <p>A simple cookie-based web app where tasks can be added, edited and prioritised.</p>
+                <br>
+                <p class="tools"><i class="fas fa-pencil-alt"></i> HTML, CSS, Javascript/p>
+              </div>
+                <a href="https://danieluk00.github.io/todo/" target="_blank" class="view-btn">View project</a>
+            </div>
+          </div>
+
+        </div>
+
       </div>
 
       <div class="card-white">
-        <i class="fas fa-thumbs-up heading-icon"></i>
-        <h2>Follow me</h2>
+        <i class="far fa-comment heading-icon"></i>
+        <h2>Contact me</h2>
+        <p>Interested in my work? Drop me an email or contact me via LinkedIn.</p>
         <ul class="horizontal-links">
-          <li><a href="https://www.facebook.com/daniellandes" target="_blank"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="https://www.instagram.com/crazyramblingsuk/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://www.twitter.com/crazyramblings" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="mailto:daniellandes@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
           <li><a href="https://www.linkedin.com/in/daniellandes/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         </ul>
       </div>
 
-      <div class="card-white">
-          <a href="mailto:daniellandes@gmail.com" id="email"><i class="fas fa-envelope" id="contact-title"></i>Email me</a>
-      </div>
-
     </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.projects').slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          arrows: false,
+          dots: true,
+          focusOnSelect: false
+        });
+      });
+    </script>
+
   </body>
 
 </html>

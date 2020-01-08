@@ -2,24 +2,19 @@ body {
   background-color: #F7F9FC;
   font-family: 'Raleway', sans-serif;
   text-align: center;
-  font-weight 400;
-}
-
-img {
-  width: 150px;
-  height: 150px;
-  border-radius:50%;
+  font-weight: 400;
 }
 
 #container {
-    max-width: 800px;
-    margin: 0px auto;
-    padding: 0 20px;
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 0 20px;
 }
 
-p {
-  padding-left: 80px;
-  padding-right: 80px;
+.profilepic {
+  width: 150px;
+  height: 150px;
+  border-radius:50%;
 }
 
 .heading-icon {
@@ -59,7 +54,13 @@ a:hover {
 }
 
 .horizontal-links i:hover {
-  color: #818eaa;
+  color: #97999e;
+}
+
+p {
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 16px;
 }
 
 .description {
@@ -93,5 +94,81 @@ a:hover {
   .fa-envelope {
     padding-right: 30px;
   }
+}
 
+.projects {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 10px;
+  width: 50vw;
+  height: 400px !important;
+}
+
+.project-card > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-card h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.project-card p {
+  font-size: 14px;
+  opacity: .7;
+  margin: 0;
+  padding: 0;
+}
+
+.project-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  text-align: left;
+  height: 160px;
+}
+
+.project-info h2 {
+  font-weight: bolder;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.view-btn {
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  background: #0065ff;
+  color: white;
+  border: 1px solid 0065ff;
+  padding: 4px 16px;
+  border-radius: 30px;
+  font-weight: lighter;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  transition: all .2s ease-in-out;
+}
+
+.view-btn:hover {
+  transform: scale(1.05);
+  opacity: 1;
+  color: white;
+  font-weight: bolder;
+}
+
+.tools {
+  font-style: italic;
 }
