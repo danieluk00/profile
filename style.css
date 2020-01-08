@@ -34,8 +34,10 @@ body {
   transition: transform .2s;
 }
 
-.card-white:hover {
-  transform: scale(1.02);
+@media (min-width: 1100px) {
+  .card-white:hover {
+    transform: scale(1.02);
+  }
 }
 
 a:hover {
