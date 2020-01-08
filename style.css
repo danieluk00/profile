@@ -30,6 +30,11 @@ body {
   border-radius: 4px;
   margin: 24px auto;
   text-align: center;
+  transition: transform .2s;
+}
+
+.card-white:hover {
+  transform: scale(1.02);
 }
 
 a:hover {
