@@ -9,33 +9,20 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
-  <body>
+  <body onload="fadeIn()">
     <div id="container">
-      <div class="card-white">
-        <h1 class="typewriter">Hello, I'm Daniel</h1>
+      <div class="card-white card1 hidden">
+        <h1>Hello, I'm Daniel</h1>
         <img src="images/DL.jpg" class="profilepic"></img>
         <p class="description">I'm a Product Manager and Developer working on a number of digital projects. I recently completed Le Wagon's Full Stack Web Development bootcamp in Barcleona.</p>
       </div>
 
-      <div class="card-white">
+      <div class="card-white card2 hidden">
         <i class="fas fa-pencil-alt heading-icon"></i>
         <h2>Projects</h2>
         <p >Some examples of projects I've built (for work and for fun).</p>
 
         <div class="projects">
-
-          <div class="project-card">
-            <img src="images/epicenter.png" />
-            <div class="project-info">
-                <div>
-                  <h2>Epicenter</h2>
-                  <p>Experimental project where a meeting place is algorithmically chosen for an event based on where the attendees are travelling from.</p>
-                  <br>
-                  <p class="tools"><i class="fas fa-pencil-alt"></i> Ruby on Rails, JS, Google Places API</p>
-                </div>
-                <a href="http://www.epicenter.live/" target="_blank" class="view-btn">View project</a>
-            </div>
-          </div>
 
           <div class="project-card">
             <img src="images/connect4.png" />
@@ -51,20 +38,33 @@
           </div>
 
           <div class="project-card">
+            <img src="images/epicenter.png" />
+            <div class="project-info">
+                <div>
+                  <h2>Epicenter</h2>
+                  <p>Experimental project where a meeting place is algorithmically chosen for an event based on where the attendees are travelling from.</p>
+                  <br>
+                  <p class="tools"><i class="fas fa-pencil-alt"></i> Ruby on Rails, JS, Google Places API</p>
+                </div>
+                <a href="http://www.epicenter.live/" target="_blank" class="view-btn">View project</a>
+            </div>
+          </div>
+
+          <div class="project-card">
             <img src="images/news.png" />
             <div class="project-info">
                 <div>
                   <h2>Scrapbook</h2>
                   <p>A service to save, tag and find articles that you may want to read again.</p>
                   <br>
-                  <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, Firebase</p>
+                  <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, Firebase db & authentication</p>
                 </div>
                 <a href="https://danieluk00.github.io/scrapbook/" target="_blank" class="view-btn">View project</a>
             </div>
           </div>
 
           <div class="project-card">
-            <img src="images/todo.png" />
+            <img src="images/todo.jpg" />
             <div class="project-info">
               <div>
                 <h2>To-do list</h2>
@@ -76,11 +76,24 @@
             </div>
           </div>
 
+          <div class="project-card">
+            <img src="images/mixandmatch.jpg" />
+            <div class="project-info">
+                <div>
+                  <h2>Mix and Match</h2>
+                  <p>An Android game where the user has to match items on a grid to categories.</p>
+                  <br>
+                  <p class="tools"><i class="fas fa-pencil-alt"></i> Java, XML, Google Ads SDK</p>
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=appsolutezero.mixandmatch" target="_blank" class="view-btn">View project</a>
+            </div>
+          </div>
+
         </div>
 
       </div>
 
-      <div class="card-white">
+      <div class="card-white card3 hidden">
         <i class="far fa-comment heading-icon"></i>
         <h2>Contact me</h2>
         <p>Interested in my work? Drop me an email or contact me via LinkedIn.</p>
@@ -114,6 +127,17 @@
             }]
         });
       });
+    </script>
+
+    <script type="text/javascript">
+      const fadeIn = () => {
+        document.querySelector('.card1').classList.remove('hidden');
+        document.querySelector('.card1').classList.add('text-focus-in');
+        document.querySelector('.card2').classList.remove('hidden');
+        document.querySelector('.card2').classList.add('text-focus-in');
+        document.querySelector('.card3').classList.remove('hidden');
+        document.querySelector('.card3').classList.add('text-focus-in');
+      }
     </script>
 
   </body>
