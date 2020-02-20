@@ -11,7 +11,6 @@ body {
   padding: 0 20px;
 }
 
-
 .profilepic {
   width: 150px;
   height: 150px;
@@ -210,7 +209,7 @@ p {
   position: absolute;
   border-radius: 50%;
   background: #a0a4ef;
-  animation: ripple 80s infinite;
+  animation: ripple 60s infinite;
   box-shadow: 0px 0px 1px 0px #508fb9;
   z-index: -1;
 }
