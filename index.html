@@ -5,140 +5,124 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
   </head>
-  <body onload="fadeIn()">
-    <div id="container">
-      <div class="card-white card1 hidden">
-        <h1>Hello, I'm Daniel</h1>
-        <img src="images/DL.jpg" class="profilepic"></img>
-        <p class="description">I'm a Product Manager and Developer working on a number of digital projects. I recently completed Le Wagon's Full Stack Web Development bootcamp in Barcleona.</p>
-      </div>
+  <body>
 
-      <div class="card-white card2 hidden">
-        <i class="fas fa-pencil-alt heading-icon"></i>
-        <h2>Projects</h2>
-        <p >Some examples of projects I've built (for work and for fun).</p>
+    <div class="ripple-background">
 
-        <div class="projects">
+      <div id="container">
+        <div class="card-white card1 wow bounceInLeft">
+          <h1>Hello, I'm Daniel</h1>
+          <img src="images/DL.jpg" class="profilepic"></img>
+          <p class="description">I'm a Product Manager and Developer working on a number of digital projects. I recently completed Le Wagon's Full Stack Web Development bootcamp in Barcleona.</p>
+        </div>
 
-          <div class="project-card">
-            <img src="images/connect4.png" />
+        <div class="card-white card2 wow bounceInLeft">
+          <i class="fas fa-pencil-alt heading-icon"></i>
+          <h2>Projects</h2>
+          <p >Some examples of projects I've built (for work and for fun).</p>
+
+          <div class="projects">
+
+            <div class="project-card">
+              <img src="images/connect4.png" />
+                <div class="project-info">
+                  <div>
+                    <h2>Connect 4</h2>
+                    <p>My version of Connect 4 - play against a computer opponent, or two player via the web.</p>
+                    <br>
+                    <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, HTML, CSS, Bootstrap</p>
+                  </div>
+                  <a href="https://danieluk00.github.io/connect4/" target="_blank" class="view-btn">View project</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+              <img src="images/epicenter.png" />
+              <div class="project-info">
+                  <div>
+                    <h2>Epicenter</h2>
+                    <p>Experimental project where a meeting place is algorithmically chosen for an event based on where the attendees are travelling from.</p>
+                    <br>
+                    <p class="tools"><i class="fas fa-pencil-alt"></i> Ruby on Rails, JS, Google Places API</p>
+                  </div>
+                  <a href="http://www.epicenter.live/" target="_blank" class="view-btn">View project</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="images/pie.jpeg" />
+              <div class="project-info">
+                  <div>
+                    <h2>Slice of Pie</h2>
+                    <p>The easy way to track group expenses and work out who owes what.</p>
+                    <br>
+                    <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, Firebase</p>
+                  </div>
+                  <a href="https://sliceofpie.web.app/" target="_blank" class="view-btn">View project</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="images/news.png" />
+              <div class="project-info">
+                  <div>
+                    <h2>Scrapbook</h2>
+                    <p>A service to save, tag and find articles that you may want to read again.</p>
+                    <br>
+                    <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, Firebase db & authentication</p>
+                  </div>
+                  <a href="https://danieluk00.github.io/scrapbook/" target="_blank" class="view-btn">View project</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="images/todo.jpg" />
               <div class="project-info">
                 <div>
-                  <h2>Connect 4</h2>
-                  <p>My version of Connect 4 - play against a computer opponent, or two player via the web.</p>
+                  <h2>To-do list</h2>
+                  <p>A simple cookie-based web app where tasks can be added, edited and prioritised.</p>
                   <br>
-                  <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, HTML, CSS, Bootstrap</p>
+                  <p class="tools"><i class="fas fa-pencil-alt"></i> HTML, CSS, Javascript</p>
                 </div>
-                <a href="https://danieluk00.github.io/connect4/" target="_blank" class="view-btn">View project</a>
+                  <a href="https://danieluk00.github.io/todo/" target="_blank" class="view-btn">View project</a>
               </div>
-          </div>
-
-          <div class="project-card">
-            <img src="images/epicenter.png" />
-            <div class="project-info">
-                <div>
-                  <h2>Epicenter</h2>
-                  <p>Experimental project where a meeting place is algorithmically chosen for an event based on where the attendees are travelling from.</p>
-                  <br>
-                  <p class="tools"><i class="fas fa-pencil-alt"></i> Ruby on Rails, JS, Google Places API</p>
-                </div>
-                <a href="http://www.epicenter.live/" target="_blank" class="view-btn">View project</a>
             </div>
-          </div>
 
-          <div class="project-card">
-            <img src="images/pie.jpeg" />
-            <div class="project-info">
-                <div>
-                  <h2>Slice of Pie</h2>
-                  <p>The easy way to track group expenses and work out who owes what.</p>
-                  <br>
-                  <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, Firebase</p>
-                </div>
-                <a href="https://sliceofpie.web.app/" target="_blank" class="view-btn">View project</a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <img src="images/news.png" />
-            <div class="project-info">
-                <div>
-                  <h2>Scrapbook</h2>
-                  <p>A service to save, tag and find articles that you may want to read again.</p>
-                  <br>
-                  <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, Firebase db & authentication</p>
-                </div>
-                <a href="https://danieluk00.github.io/scrapbook/" target="_blank" class="view-btn">View project</a>
-            </div>
-          </div>
-
-          <div class="project-card">
-            <img src="images/todo.jpg" />
-            <div class="project-info">
-              <div>
-                <h2>To-do list</h2>
-                <p>A simple cookie-based web app where tasks can be added, edited and prioritised.</p>
-                <br>
-                <p class="tools"><i class="fas fa-pencil-alt"></i> HTML, CSS, Javascript</p>
-              </div>
-                <a href="https://danieluk00.github.io/todo/" target="_blank" class="view-btn">View project</a>
-            </div>
           </div>
 
         </div>
 
+        <div class="card-white card3 wow bounceInLeft">
+          <i class="far fa-comment heading-icon"></i>
+          <h2>Contact me</h2>
+          <p>Interested in my work? Drop me an email or contact me via LinkedIn.</p>
+          <ul class="horizontal-links">
+            <li><a href="mailto:daniellandes@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/daniellandes/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+
       </div>
 
-      <div class="card-white card3 hidden">
-        <i class="far fa-comment heading-icon"></i>
-        <h2>Contact me</h2>
-        <p>Interested in my work? Drop me an email or contact me via LinkedIn.</p>
-        <ul class="horizontal-links">
-          <li><a href="mailto:daniellandes@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/daniellandes/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        </ul>
-      </div>
+
+      <div class="circle large shade1"></div>
+      <div class="circle medium shade2"></div>
+      <div class="circle small shade3"></div>
+
+
 
     </div>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.projects').slick({
-          infinite: true,
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          arrows: false,
-          dots: true,
-          focusOnSelect: false,
-          responsive: [
-            {
-              breakpoint: 500,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              }
-            }]
-        });
-      });
-    </script>
-
-    <script type="text/javascript">
-      const fadeIn = () => {
-        document.querySelector('.card1').classList.remove('hidden');
-        document.querySelector('.card1').classList.add('text-focus-in');
-        document.querySelector('.card2').classList.remove('hidden');
-        document.querySelector('.card2').classList.add('text-focus-in');
-        document.querySelector('.card3').classList.remove('hidden');
-        document.querySelector('.card3').classList.add('text-focus-in');
-      }
-    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="script.js"></script>
 
   </body>
 
