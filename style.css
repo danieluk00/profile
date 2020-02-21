@@ -209,7 +209,7 @@ p {
 .circle{
   position: absolute;
   border-radius: 50%;
-  background: #a0a4ef;
+  background: #7cacff;
   animation: ripple 60s infinite;
   box-shadow: 0px 0px 15px 0px #508fb9;
   z-index: -1;

@@ -18,3 +18,10 @@ $(document).ready(function(){
   });
 
   new WOW().init();
+
+  const onload = () => {
+    setTimeout(function(){ 
+      document.querySelector('.profilepic').classList.add('animated','flip');
+     }, 1500);
+    
+  }
