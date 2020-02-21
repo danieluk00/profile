@@ -8,7 +8,7 @@ $(document).ready(function(){
       focusOnSelect: false,
       responsive: [
         {
-          breakpoint: 500,
+          breakpoint: 600,
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
