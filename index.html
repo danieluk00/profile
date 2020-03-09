@@ -14,6 +14,23 @@
 
     <div class="ripple-background">
 
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <h1 id="overlay-name"></h1>
+        <video controls autoplay>
+          <source src="videos/connect4.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+
+    </div>
+
       <div id="container">
         <div class="card-white card1 wow slideInLeft">
           <h1 class="title">Hello, I'm Daniel</h1>
@@ -25,11 +42,11 @@
         <div class="card-white card2 wow slideInRight">
           <i class="fas fa-pencil-alt heading-icon"></i>
           <h2>Projects</h2>
-          <p >Some examples of projects I've built (for work and for fun).</p>
+          <p >Some examples of projects I've built for work and for fun. Click the dots below to see more.</p>
 
           <div class="projects">
 
-            <div class="project-card">
+            <div class="project-card" onclick="openNav('connect4')">
               <img src="images/connect4.png" />
                 <div class="project-info">
                   <div>
@@ -38,7 +55,9 @@
                     <br>
                     <p class="tools"><i class="fas fa-pencil-alt"></i> Javascript, HTML, CSS, Bootstrap</p>
                   </div>
-                  <a href="https://danieluk00.github.io/connect4/" target="_blank" class="view-btn">View project</a>
+                  <div class="view-div">
+                    <a href="https://danieluk00.github.io/connect4/" target="_blank" class="view-btn">View project</a>
+                  </div>
                 </div>
             </div>
 
@@ -52,6 +71,19 @@
                     <p class="tools"><i class="fas fa-pencil-alt"></i> Ruby on Rails, JS, Google Places API</p>
                   </div>
                   <a href="http://www.epicenter.live/" target="_blank" class="view-btn">View project</a>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <img src="images/berenice.jpeg" />
+              <div class="project-info">
+                  <div>
+                    <h2>Berenice Sydney</h2>
+                    <p>Website to showcase the work of the late artist Berenice Sydney</p>
+                    <br>
+                    <p class="tools"><i class="fas fa-pencil-alt"></i> HTML, CSS</p>
+                  </div>
+                  <a href="http://berenicesydneyartist.web.app" target="_blank" class="view-btn">View project</a>
               </div>
             </div>
 
@@ -100,7 +132,7 @@
 
         <div class="card-white card3 wow slideInLeft">
           <i class="fas fa-code heading-icon"></i>
-          <h2>Languages</h2>
+          <h2>Skills</h2>
           <p>Languages and frameworks I've worked with include...</p>
           <ul class="horizontal-links wow rubberBand">
             <li><img src="images/languages/js.png" class="language"></li>
