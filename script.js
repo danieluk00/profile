@@ -25,19 +25,3 @@ $(document).ready(function(){
      }, 1500);
     
   }
-
-
-  /* Open when someone clicks on the span element */
-function openNav(name) {
-  document.getElementById("myNav").style.width = "100%";
-
-  const overlayName = document.getElementById('overlay-name');
-  if (name=='connect4') {
-    overlayName.innerText = 'Connect 4';
-  }
-}
-
-/* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
